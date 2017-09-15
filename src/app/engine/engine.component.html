@@ -10,12 +10,22 @@
     <h2>Try racing your supercars</h2>
     <div class="well">
         <h3>Lamborghini Aventador</h3>
-        <button class="btn btn-primary" (click)="onRace()" [class.raceTimes]="">Dyno run</button>
+        <button class="btn btn-primary" (click)="onRace()">Dyno run</button>
         <p class="raceTimes"><b>Finish time: {{raceTime}}s</b></p>
         <h3>Ferrari 918 Spyder</h3>
         <button class="btn btn-primary" (click)="onRace()">Dyno run</button>
         <h3>McLaren P1 GTR</h3>
         <button class="btn btn-primary" (click)="onRace()">Dyno run</button>
     </div>
-    
+    <div class="well">
+        <h3>Quarter mile drag races</h3>
+        <button class="btn btn-primary" (click)="ondrag()">Drag race</button>
+        <p class="raceTimes"><b>Finish time: {{quarterMileRace}}s</b></p>
+        <h3>Ferrari 918 Spyder</h3>
+        <button class="btn btn-primary" (click)="ondrag()">Drag race</button>
+        <p class="raceTimes"><b>Finish time: {{quarterMileRace}}s</b></p>
+        <h3>McLaren P1 GTR</h3>
+        <button class="btn btn-primary" (click)="ondrag()">Drag race</button>
+        <p class="raceTimes"><b>Finish time: {{quarterMileRace}}s</b></p>
+    </div>
 </div>

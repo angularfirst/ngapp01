@@ -11,4 +11,10 @@ export class EngineService {
     return randomNum;
   }
 
+  ondrag() {
+    let dragTimesQuarter;
+    dragTimesQuarter = (Math.random() * (6.999 - 5.000) + 5.000.toFixed(3));
+    return dragTimesQuarter;
+  }
+
 }

@@ -9,8 +9,10 @@ import { EngineService } from '../engine.service';
 export class EngineComponent {
   engines;
   raceTime;
+  quarterMileRace;
   constructor(appEngine: EngineService) {
     this.engines = appEngine.getParts();
     this.raceTime = appEngine.onRace();
+    this.quarterMileRace = appEngine.ondrag();
   }
 }
